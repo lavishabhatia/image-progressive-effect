@@ -1,0 +1,52 @@
+/* src/ProgressiveImage.css */
+.progressive-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your requirements */
+  margin: auto;
+}
+
+.progressive-image {
+  width: 100%;
+  display: block;
+}
+
+.progressive-image.bw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50%;
+}
