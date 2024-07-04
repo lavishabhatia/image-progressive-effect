@@ -61,8 +61,8 @@
   width: 2px;
   background: repeating-linear-gradient(
     to bottom,
-    black,
-    black 2px,
+    rgb(218, 209, 209) ,
+    rgb(204, 193, 193) 2px,
     transparent 2px,
     transparent 4px
   );
