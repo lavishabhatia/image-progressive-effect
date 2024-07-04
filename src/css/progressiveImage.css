@@ -36,9 +36,9 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 35px;
-  height: 35px;
-  background: red;
+  width: 30px;
+  height: 30px;
+  background: black;
   cursor: pointer;
   
   position: relative;
