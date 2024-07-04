@@ -25,28 +25,46 @@
   left: 0;
   width: 100%;
   transform: translateY(-50%);
-  z-index: 2;
   -webkit-appearance: none;
   appearance: none;
   height: 5px;
   background: transparent;
   cursor: pointer;
+  z-index: 4;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #000;
+  width: 35px;
+  height: 35px;
+  background: red;
   cursor: pointer;
+  
+  position: relative;
   border-radius: 50%;
 }
 
 .slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #000;
+  width: 24px;
+  height: 24px;
+  background: red;
   cursor: pointer;
   border-radius: 50%;
+}
+
+
+.dotted-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    black,
+    black 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  z-index: 3;
 }

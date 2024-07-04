@@ -28,6 +28,13 @@ const ProgressiveImage = ({ src }) => {
         onChange={handleRangeChange}
         className="slider"
       />
+      {/* <div className="slider inner" style={{ left: `calc(${progress}% )` }}>
+        ||
+      </div> */}
+      <div
+        className="dotted-line"
+        style={{ left: `calc(${progress}% - 1px)` }}
+      ></div>
     </div>
   );
 };
