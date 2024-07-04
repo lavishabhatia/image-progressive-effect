@@ -1,4 +1,3 @@
-// src/ProgressiveImage.js
 import React, { useState } from "react";
 import "../src/css/progressiveImage.css";
 
